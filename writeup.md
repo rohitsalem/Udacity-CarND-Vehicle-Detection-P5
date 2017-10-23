@@ -1,7 +1,7 @@
 
 ---
 
-**Vehicle Detection Project**
+# Vehicle Detection Project
 
 The goals / steps of this project are the following:
 
@@ -16,7 +16,7 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/hog_features.png
 [image2]: ./output_images/basic_out_test.png
 [image3]: ./output_images/basic_heat.png
-[image4]: ./output_images/heat_threshold.png
+[image4]: ./output_images/heat_theshold.png
 [image5]: ./output_images/heat_labels.png
 [image6]: ./output_images/test_out_labels.png
 [image7]: ./output_images/window1.png
@@ -82,7 +82,7 @@ The heatmap after thresholding:
 ## Running on the Videos:
 
 * First I ran the pipeline directly on the test video, predicting frame to frame without taking into consideration the rectangles detected in the previous frames, it can be found in [video](./test_out1.mp4)
-* To take into consideration, previously detected rectangles, `Detect_vehicle` class is used to append rectangles from the previous frames while discarding the oldest frames. The pipeline using this can be found in the test [video](./test_out2.mp4)
+* To take into consideration, previously detected rectangles, `Detect_vehicle` class is used to append rectangles from the previous frames while discarding the oldest frames. The pipeline using this can be found in the test [video](./test_out_2.mp4)
 * Finally I ran the Pipeline, considering the previously detected rectangles on the main video. The results can be found [here](./project_video_out.mp4)
 
 ## Discussion
