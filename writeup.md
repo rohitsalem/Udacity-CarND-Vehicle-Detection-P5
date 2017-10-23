@@ -72,10 +72,10 @@ The heatmap after thresholding:
  The labeled heatmap: 
  ![alt text][image5]
  
- * Then I find the max and min corners covering the labels, so that we can have a clear bounding box covering the car totally. 
+ * Then I find the max and min corners covering the labels, so that we can have a clear bounding box covering the car totally.
+ 
  ![alt text][image6]
 
- 
 * The Whole pipeline run once on test images can be found in the image below:
 ![alt text][image11]
 
