@@ -63,9 +63,11 @@ The various scales can be seen in these images:
 * Created a heatmap by increasing the intensity of a pixel when the car is found multiple times, then thresholding the heatmap to avoid false positives which are most likely detected in one or two windows. 
 
 The raw heatmap :
+
 ![alt text][image3]
 
 The heatmap after thresholding:
+
 ![alt text][image4]
 
 * Then I label the heatmaps to fing the actual number of cars using Scipy labels
@@ -89,6 +91,6 @@ The heatmap after thresholding:
 
 * In the output video for the project, the pipeline was able to detect the cars correctly and there were no false positives detected at all which is a good sign, thanks to the heat_map thersholding. 
 * The Bounding Boxes detected were sometimes smaller than expected, I think these can be reduced by fine tuning of the scale of sliding windows used for the detection. 
-* The Classifier used here is an SVM classifier which is one of the basic classifiers, I think the pipeline can be better handeled by the deep neural networks and there are evident examples in the past like the RCNNs (Region based Covolutional Neural Networks) which work basically the same way of sliding windows, but are proved much more accurate and fast. 
+* The Classifier used here is an SVM classifier which is one of the basic classifiers, I think the pipeline can be better handeled by the deep neural networks and there are evident examples in the past like the [F-RCNNs](https://arxiv.org/abs/1506.01497) (Faster Region based Covolutional Neural Networks) which work basically the same way of sliding windows, but are proved much more accurate and fast. 
 * Other Object detection algorithms like [YOLO](https://pjreddie.com/darknet/yolo/) and [SSD](https://arxiv.org/pdf/1512.02325.pdf) also seem very promising. But there are a lot of false postives in the output with these mostly because they are trained on various classes which will sometimes confuse the classifier. 
 * I would like to improve the pipeline by using Deep neural networks and the other techniques mentioned above along with the HOG features as input in addition to the image itself.
