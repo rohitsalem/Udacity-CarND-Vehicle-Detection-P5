@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 [image1]: ./output_images/hog_features.png
-[image2]: ./output_images/basic_out_test.png
+[image2]: ./output_images/basic_output_test.png
 [image3]: ./output_images/basic_heat.png
 [image4]: ./output_images/heat_theshold.png
 [image5]: ./output_images/heat_labels.png
@@ -47,6 +47,7 @@ Here is an image which shows an example images for both car and non-car, after p
 * We can now detect the cars but only if the major portion of the input image is car, which is not a case here, So we need a sliding window which covers the image and then the classifier can be run on that windows one at a time. As of now I also restricted the search space to the bottom half of the image, where the cars are ought to be found. 
 * The code for finding cars and drawing boxes can be found in cells 8, 9 and 10. 
 The output for the first run is here:
+
 ![alt text][image2]
 
 ## Using different sizes of windows for the search:
